@@ -157,6 +157,7 @@ def process_pdfs_only_text(pdf_folder, output_json, filename_json):
             data.append({'File Name': file_name, 'Text': text})
 
     # Select a random subset of PDF files for each percentage
+    # Depending of the pourcentage of the dataset you want to be split, you should change the value of the line 161 (ex : 1 will take all the dataset)
     for percentage in [0.2, 0.4, 0.6, 0.8, 1]:
         num_files = int(len(pdf_files) * percentage)
         pdf_files_subset = random.sample(pdf_files, num_files)
