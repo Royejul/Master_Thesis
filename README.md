@@ -23,20 +23,11 @@ source env/bin/activate
 
 # Install the requirements
 pip install -r requirements.txt
-```
-
-Once this is done, make sure your terminal is in the main project directory when running these commands.
-
-```bash
-# So in our case
-cd Master_Thesis
-
-# Activate virtual environment
-env\Scripts\activate
 
 # Start Jupyter
 jupyter notebook
 ```
+
 A new web page will open (with your Jupyter localhost) then open the file ```model_evaluation.ipynb```. This is the main file where the different models are launched and then run the various proposed blocks. The first block only concerns data extraction, only run it if you want new data for our models.
 
 The ```model.py``` file stores the code for the models, coherence, diversity and computation time. It is then used by the Jupyter file ```model_evaluation.ipynb```.
